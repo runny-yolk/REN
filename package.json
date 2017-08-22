@@ -1,0 +1,19 @@
+{
+  "name": "5-seconds-of-hell",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "browserify ./react-app/app.js -t babelify | uglifyjs --comments /copyright/i -o ./public/scripts/bundle.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.15.2",
+    "pug": "~2.0.0-beta11",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0"
+  }
+}
