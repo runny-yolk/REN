@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "builddev": "browserify ./react-app/app.js -t babelify -o ./public/scripts/bundle.js",
-    "build": "browserify ./react-app/app.js -t babelify -g [ envify --NODE_ENV production ] -g uglifyify -p bundle-collapser/plugin | uglifyjs --compress --mangle -o ./scripts/bundle.js",
+    "build": "browserify ./react-app/app.js -t babelify -g [ envify --NODE_ENV production ] -g uglifyify -p bundle-collapser/plugin | uglifyjs --compress --mangle -o ./public/scripts/bundle.js",
     "start": "node app.js"
   },
   "dependencies": {
