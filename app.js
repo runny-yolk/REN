@@ -1,5 +1,4 @@
 const express = require('express');
-const getTweets = require('./twit.js');
 
 var app = express();
 
