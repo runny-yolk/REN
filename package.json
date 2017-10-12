@@ -4,7 +4,7 @@
   "scripts": {
     "builddev": "browserify ./react-app/app.js -t babelify -o ./public/scripts/bundle.js",
     "build": "browserify ./react-app/app.js -t babelify -g [ envify --NODE_ENV production ] -g uglifyify -p bundle-collapser/plugin | uglifyjs --compress --mangle -o ./public/scripts/bundle.js",
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "~4.15.2",
