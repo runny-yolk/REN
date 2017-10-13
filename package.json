@@ -1,6 +1,12 @@
 {
   "name": "RENstack",
   "version": "1.0.0",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
   "scripts": {
     "builddev": "browserify ./react-app/app.js -t babelify -o ./public/scripts/bundle.js",
     "build": "browserify ./react-app/app.js -t babelify -g [ envify --NODE_ENV production ] -g uglifyify -p bundle-collapser/plugin | uglifyjs --compress --mangle -o ./public/scripts/bundle.js",
