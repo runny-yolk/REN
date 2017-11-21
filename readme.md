@@ -7,4 +7,4 @@ Uses pug as a view engine.
 
 Note: Use `npm run builddev` for much faster builds, with warnings for developers. When going to production, use `npm run build`, which applies all the proper minfication, as specified in the ReactJS docs, to get a production build of React.
 
-`npm start` or `node app.js` can be used to start this app.
+`npm start` or `node server.js` can be used to start this app.
