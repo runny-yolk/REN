@@ -1,7 +1,9 @@
 const express = require('express');
 const browserify = require('browserify');
 const http = require('http');
-const port = (process.env.NODE_ENV || 3000);
+
+//Will use PORT environment variable if it exists, otherwise defaults to 3000
+const port = (process.env.PORT || 3000);
 
 var app = express();
 
