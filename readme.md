@@ -3,8 +3,6 @@ A basic ReactJS, Express, and NodeJS (REN) Stack development environment.
 
 The React generator comes with a lot of stuff, and I wanted something a bit more cut-down, and easier to jump right into. And, something that used Express out of the box.
 
-Uses pug as a view engine.
+Doesn't come with Babel, and instead of JSX, is made to use `react-hyperscript`. It's easy enough for you to change of course, but I've grown to dislike relying on Babel.
 
-Note: Use `npm run builddev` for much faster builds, with warnings for developers. When going to production, use `npm run build`, which applies all the proper minfication, as specified in the ReactJS docs, to get a production build of React.
-
-`npm start` or `node server.js` can be used to start this app.
+Start the "Hello, World!" demo with `node server.js` or `npm start`.
