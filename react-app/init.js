@@ -1,13 +1,10 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+window.React = require('react');
+window.ReactDOM = require('react-dom');
+window.h = require('react-hyperscript');
 
 // Presentational component
-const Hello = function(props){
-    return(
-        <div>
-            {'Hello, '+props.place+'!'}
-        </div>
-    )
+var Hello = function(props){
+    return h('div', 'Hello, '+props.place+'!')
 }
 
 // Compositional component
@@ -29,17 +26,15 @@ class Page extends React.Component {
     }
 
     render(){
-        return(
-            <div>
-                <input type="button" onClick={this.handleClick} value="Change place"/>
-                <Hello place={this.state.place} />
-            </div>
-        )
+        return h('div', [
+            h('input', { type: 'button', onClick: this.handleClick, value: "Change Place" }),
+            h(Hello, { place: this.state.place })
+        ]);
     }
 }
 
 
 ReactDOM.render(
-    <Page />,
+    h(Page),
     document.getElementById('root')
 );

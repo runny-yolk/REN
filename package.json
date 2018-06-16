@@ -1,31 +1,14 @@
 {
-  "name": "RENstack",
+  "name": "ren-stack",
   "version": "1.0.0",
-  "babel": {
-    "presets": [
-      "es2015",
-      "react"
-    ]
-  },
   "scripts": {
-    "builddev": "browserify ./react-app/app.js -t babelify -o ./public/scripts/bundle.js",
-    "build": "browserify ./react-app/app.js -t babelify -g [ envify --NODE_ENV production ] -g uglifyify -p bundle-collapser/plugin | uglifyjs --compress --mangle -o ./public/scripts/bundle.js",
+    "build": "browserify ./react-app/app.js -o ./public/scripts/bundle.js",
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "~4.15.2",
-    "pug": "~2.0.0-beta11",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  },
-  "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babelify": "^7.3.0",
-    "browserify": "^14.4.0",
-    "bundle-collapser": "^1.3.0",
-    "envify": "^4.1.0",
-    "uglify-js": "^3.0.28",
-    "uglifyify": "^4.0.3"
+    "express": "^4.16.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-hyperscript": "^3.2.0"
   }
 }
