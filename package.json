@@ -2,7 +2,7 @@
   "name": "ren-stack",
   "version": "1.0.0",
   "scripts": {
-    "build": "browserify ./react-app/app.js -o ./public/scripts/bundle.js",
+    "build": "browserify ./react-app/init.js -o ./public/scripts/bundle.js",
     "start": "node server.js"
   },
   "dependencies": {
