@@ -6,3 +6,5 @@ The React generator comes with a lot of stuff, and I wanted something a bit more
 Doesn't come with Babel, and instead of JSX, is made to use `react-hyperscript`. It's easy enough for you to change of course, but I've grown to dislike relying on Babel.
 
 Start the "Hello, World!" demo with `node server.js` or `npm start`.
+
+`npm run build` can be used to bundle `./react-app/init.js` to `./public/scripts/bundle.js`, and assumes you have browserify installed globally. Run `npm install browserify -g` if not.
