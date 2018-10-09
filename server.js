@@ -8,8 +8,8 @@ const app = express();
 
 
 //Logs every request, for debugging
-app.use((req,res,next) => {
-  console.log(req.method, ' ',req.url); next();
+app.use((req, res, next) => {
+  console.log(req.method, req.url); next();
 });
 //Serve static files from public
 app.use(express.static('public'));
